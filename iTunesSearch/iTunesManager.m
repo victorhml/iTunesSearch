@@ -58,7 +58,6 @@ static bool isFirstAccess = YES;
         [filme setGenero:[item objectForKey:@"primaryGenreName"]];
         [filme setPais:[item objectForKey:@"country"]];
         [filme setPreco:[item objectForKey:@"trackPrice"]];
-        
         [filmes addObject:filme];
     }
     
