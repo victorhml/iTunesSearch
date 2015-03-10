@@ -11,7 +11,10 @@
 @interface TableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
+@property (strong, nonatomic) IBOutlet UIView *view;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (weak, nonatomic) IBOutlet UITextField *searchBar;
+- (IBAction)button:(id)sender;
 
 @end
 
