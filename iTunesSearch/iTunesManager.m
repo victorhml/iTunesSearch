@@ -58,6 +58,10 @@ static bool isFirstAccess = YES;
         [filme setGenero:[item objectForKey:@"primaryGenreName"]];
         [filme setPais:[item objectForKey:@"country"]];
         [filme setPreco:[item objectForKey:@"trackPrice"]];
+        [filme setImg:[item objectForKey:@"artworkUrl60"]];
+
+        
+        
         [filmes addObject:filme];
     }
     

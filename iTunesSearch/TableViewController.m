@@ -28,9 +28,6 @@
     _tableview.dataSource = self;
     UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
     [self.tableview registerNib:nib forCellReuseIdentifier:@"celulaPadrao"];
-//    
-//    iTunesManager *itunes = [iTunesManager sharedInstance];
-//    midias = [itunes buscarMidias:@"Apple"];
     
 #warning Necessario para que a table view tenha um espaco em relacao ao topo, pois caso contrario o texto ficara atras da barra superior
     self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.bounds.size.width, 15.f)];
@@ -87,7 +84,6 @@
     
     [result appendFormat: @"%lu:", minutes];
     [result appendFormat: @"%lu", seconds];
-//    [result appendFormat: @"%2d",milliseconds];
     
     return result;
 }
@@ -96,18 +92,6 @@
     return 100;
 }
 
-//-(void)search{
-//    iTunesManager *itunes =[iTunesManager sharedInstance];
-//    midias = [itunes buscarMidias:strSearch];
-//    [_tableview reloadData];
-//}
-
-//- (IBAction)button:(id)sender {
-//    strSearch = _searchBar.text;
-//    strSearch = [strSearch stringByReplacingOccurrencesOfString:@" " withString:@"+"];
-//    [_searchBar resignFirstResponder];
-//    [self search];
-//}
 
 - (IBAction)button:(id)sender {
     iTunesManager *itunes =[iTunesManager sharedInstance];
