@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *genero;
 @property (weak, nonatomic) IBOutlet UILabel *preco;
 @property (weak, nonatomic) IBOutlet UILabel *duracao;
+@property (weak, nonatomic) IBOutlet UIImageView *imgUrl;
 
 @end

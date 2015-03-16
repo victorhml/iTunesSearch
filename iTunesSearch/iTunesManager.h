@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface iTunesManager : NSObject
-
 /**
  * gets singleton object.
  * @return singleton
@@ -17,5 +16,5 @@
 + (iTunesManager*)sharedInstance;
 
 - (NSArray *)buscarMidias:(NSString *)termo;
-
+@property NSArray* midia;
 @end

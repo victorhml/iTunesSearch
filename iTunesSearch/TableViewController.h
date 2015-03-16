@@ -13,7 +13,9 @@
 
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
-@property (weak, nonatomic) IBOutlet UITextField *searchBar;
+@property (strong, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) IBOutlet UITextField *searchBar;
+@property NSString *txtSearch;
 - (IBAction)button:(id)sender;
 
 @end
